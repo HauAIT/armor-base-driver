@@ -77,5 +77,6 @@
     "querystring": "^0.2.0",
     "serve-static": "^1.13.1",
     "sinon": "^13.0.0"
-  }
+  },
+  "types": "./build/lib/index.d.ts"
 }
