@@ -1,9 +1,8 @@
 {
   "name": "armor-base-driver",
   "description": "Base driver class for Armor drivers",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "ait-software",
-  "license": "Apache-2.0",
   "engines": [
     "node"
   ],
@@ -26,9 +25,9 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "@dabh/colors": "^1.4.0",
-    "ait-async": "github:ait-software/ait-async",
-    "armor-support": "github:ait-software/armor-support",
-    "armor-types": "github:ait-software/armor-types",
+    "ait-async": "git+https://ait-software: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@github.com/ait-software/ait-async.git",
+    "armor-support": "git+https://ait-software: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@github.com/ait-software/armor-support.git",
+    "armor-types": "git+https://ait-software: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@github.com/ait-software/armor-types.git",
     "async-lock": "^1.0.0",
     "axios": "^0.x",
     "bluebird": "^3.5.3",
@@ -65,11 +64,11 @@
     "precommit-test"
   ],
   "devDependencies": {
-    "armor-gulp-plugins": "github:ait-software/armor-gulp-plugins",
+    "armor-gulp-plugins": "git+https://ait-software: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@github.com/ait-software/armor-gulp-plugins.git",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "content-disposition": "^0.5.0",
-    "eslint-config-armor": "github:ait-software/eslint-config-armor",
+    "eslint-config-armor": "git+https://ait-software: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@github.com/ait-software/eslint-config-armor.git",
     "finalhandler": "^1.1.1",
     "gulp": "^4.0.0",
     "mocha": "^9.0.0",
