@@ -10,7 +10,7 @@ declare class ProtocolConverter {
     _downstreamProtocol: any;
     _log: any;
     get log(): any;
-    set downstreamProtocol(arg: any);
+    set downstreamProtocol(value: any);
     get downstreamProtocol(): any;
     /**
      * W3C /timeouts can take as many as 3 timeout types at once, MJSONWP /timeouts only takes one

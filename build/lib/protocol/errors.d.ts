@@ -4,7 +4,7 @@ export class ProtocolError extends ES6Error {
     error: any;
     w3cStatus: any;
     _stacktrace: any;
-    set stacktrace(arg: any);
+    set stacktrace(value: any);
     get stacktrace(): any;
 }
 export class NoSuchDriverError extends ProtocolError {

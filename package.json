@@ -1,7 +1,7 @@
 {
   "name": "armor-base-driver",
   "description": "Base driver class for Armor drivers",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "ait-software",
   "main": "./build/index.js",
   "bin": {},
@@ -51,7 +51,7 @@
     "coverage": "gulp coveralls",
     "test": "mocha --exit --timeout 1m \"./test/basedriver/*\"",
     "e2e-test": "gulp e2e-test",
-    "build": "gulp transpile",
+    "build": "tsc -b",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "precommit-test": "REPORTER=dot gulp once"
   },

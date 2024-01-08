@@ -46,7 +46,7 @@ const METHOD_MAP = /** @type {const} */ ({
         DELETE: { command: 'deleteSession' },
     },
     '/session/:sessionId/timeouts': {
-        GET: { command: 'getTimeouts' },
+        GET: { command: 'getTimeouts' }, // W3C route
         POST: {
             command: 'timeouts',
             payloadParams: {
@@ -204,7 +204,7 @@ const METHOD_MAP = /** @type {const} */ ({
         },
     },
     '/session/:sessionId/element/active': {
-        GET: { command: 'active' },
+        GET: { command: 'active' }, // W3C: https://w3c.github.io/webdriver/webdriver-spec.html#dfn-get-active-element
         POST: { command: 'active' },
     },
     '/session/:sessionId/element/:elementId': {

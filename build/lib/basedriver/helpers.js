@@ -28,7 +28,7 @@ const DEFAULT_REQ_HEADERS = Object.freeze({
 const AVG_DOWNLOAD_SPEED_MEASUREMENT_THRESHOLD_SEC = 2;
 const APPLICATIONS_CACHE = new lru_cache_1.LRUCache({
     max: MAX_CACHED_APPS,
-    ttl: CACHED_APPS_MAX_AGE,
+    ttl: CACHED_APPS_MAX_AGE, // expire after 24 hours
     updateAgeOnGet: true,
     // @ts-ignore The fullPath property exists
     dispose: ({ fullPath }, app) => {

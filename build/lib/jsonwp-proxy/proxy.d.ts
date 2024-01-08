@@ -43,7 +43,7 @@ export class JWProxy {
     getActiveRequestsCount(): number;
     cancelActiveRequests(): void;
     endpointRequiresSessionId(endpoint: any): boolean;
-    set downstreamProtocol(arg: any);
+    set downstreamProtocol(value: any);
     get downstreamProtocol(): any;
     getUrlForProxy(url: any): string;
     proxy(url: any, method: any, body?: null): Promise<any[]>;
