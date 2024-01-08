@@ -5,9 +5,9 @@ import chai from 'chai';
 import sinon from 'sinon';
 import chaiAsPromised from 'chai-as-promised';
 import { driverShouldDoJwpProxy } from '../../lib/protocol/protocol';
-import {
-  MJSONWP_ELEMENT_KEY, W3C_ELEMENT_KEY, IMAGE_ELEMENT_PREFIX
-} from '../../lib/constants';
+// eslint-disable-next-line
+import { MJSONWP_ELEMENT_KEY, W3C_ELEMENT_KEY, IMAGE_ELEMENT_PREFIX } from '../../lib/constants';
+// eslint-disable-next-line
 import BaseDriver from '../../lib/basedriver/driver';
 
 chai.should();

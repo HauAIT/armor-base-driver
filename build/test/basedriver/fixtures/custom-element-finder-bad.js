@@ -1,0 +1,11 @@
+"use strict";
+
+require("source-map-support/register");
+module.exports = {
+  notFind: function () {
+    return [];
+  }
+};require('source-map-support').install();
+
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGVzdC9iYXNlZHJpdmVyL2ZpeHR1cmVzL2N1c3RvbS1lbGVtZW50LWZpbmRlci1iYWQuanMiLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwibm90RmluZCJdLCJzb3VyY2VSb290IjoiLi4vLi4vLi4vLi4iLCJzb3VyY2VzIjpbInRlc3QvYmFzZWRyaXZlci9maXh0dXJlcy9jdXN0b20tZWxlbWVudC1maW5kZXItYmFkLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0ge1xuICBub3RGaW5kOiBmdW5jdGlvbiAoKSB7IC8vIGVzbGludC1kaXNhYmxlLWxpbmUgb2JqZWN0LXNob3J0aGFuZFxuICAgIHJldHVybiBbXTtcbiAgfVxufTtcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUFBLE1BQU0sQ0FBQ0MsT0FBTyxHQUFHO0VBQ2ZDLE9BQU8sRUFBRSxTQUFBQSxDQUFBLEVBQVk7SUFDbkIsT0FBTyxFQUFFO0VBQ1g7QUFDRixDQUFDIn0=

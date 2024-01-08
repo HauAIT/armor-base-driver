@@ -8,6 +8,7 @@ const lodash_1 = __importDefault(require("lodash"));
 require("@colors/colors");
 const morgan_1 = __importDefault(require("morgan"));
 const logger_1 = __importDefault(require("./logger"));
+// eslint-disable-next-line
 const constants_1 = require("../constants");
 // Copied the morgan compile function over so that cooler formats
 // may be configured

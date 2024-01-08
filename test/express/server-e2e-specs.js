@@ -67,6 +67,7 @@ describe('server', function () {
     }).should.be.rejectedWith(/EADDRINUSE/);
   });
   it('should not wait for the server close connections before finishing closing', async function () {
+    // eslint-disable-next-line
     let bodyPromise = axios.get('http://localhost:8181/pause').catch(() => {});
 
     // relinquish control so that we don't close before the request is received

@@ -11,6 +11,7 @@ const errors_1 = require("./errors");
 const routes_1 = require("./routes");
 const bluebird_1 = __importDefault(require("bluebird"));
 const helpers_1 = require("./helpers");
+// eslint-disable-next-line
 const constants_1 = require("../constants");
 const capabilities_1 = require("../helpers/capabilities");
 const logger_1 = __importDefault(require("../basedriver/logger"));

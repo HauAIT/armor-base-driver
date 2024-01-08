@@ -1,6 +1,6 @@
 /* eslint-disable require-await */
 import { errors, BaseDriver, determineProtocol } from '../..';
-import { PROTOCOLS } from '../../lib/constants';
+import { PROTOCOLS } from '../../lib';
 import _ from 'lodash';
 import { util } from 'armor-support';
 

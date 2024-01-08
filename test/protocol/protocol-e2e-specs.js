@@ -11,9 +11,8 @@ import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import { StatusCodes as HTTPStatusCodes } from 'http-status-codes';
 import { createProxyServer } from './helpers';
-import {
-  MJSONWP_ELEMENT_KEY, W3C_ELEMENT_KEY
-} from '../../lib/constants';
+// eslint-disable-next-line
+import { MJSONWP_ELEMENT_KEY, W3C_ELEMENT_KEY } from '../../lib/constants';
 import qs from 'querystring';
 
 

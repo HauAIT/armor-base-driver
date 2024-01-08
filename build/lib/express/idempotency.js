@@ -47,6 +47,7 @@ function cacheResponse(key, req, res) {
     });
     const socket = res.socket;
     const originalSocketWriter = socket.write.bind(socket);
+    // eslint-disable-next-line
     const responseRef = new WeakRef(res);
     let responseChunks = [];
     let responseSize = 0;
@@ -130,6 +131,7 @@ function cacheResponse(key, req, res) {
  * @param {import('express').Request} req
  * @param {import('express').Response} res
  */
+// eslint-disable-next-line
 async function handleIdempotency(req, res, next) {
     const keyOrArr = req.headers[IDEMPOTENCY_KEY_HEADER];
     if (lodash_1.default.isEmpty(keyOrArr) || !keyOrArr) {
@@ -165,6 +167,7 @@ async function handleIdempotency(req, res, next) {
     else {
         logger_1.default.info(`The same request with the idempotency key '${key}' is being processed`);
         logger_1.default.info(`Waiting for the response to be rerouted to the current request`);
+        // eslint-disable-next-line
         responseStateListener.once('ready', async (/** @type {Buffer?} */ cachedResponse) => {
             if (!cachedResponse || !res.socket?.writable) {
                 return next();

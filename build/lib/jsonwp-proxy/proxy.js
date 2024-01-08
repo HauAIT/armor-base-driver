@@ -10,6 +10,7 @@ const axios_1 = __importDefault(require("axios"));
 const status_1 = require("../jsonwp-status/status");
 const errors_1 = require("../protocol/errors");
 const protocol_1 = require("../protocol");
+// eslint-disable-next-line
 const constants_1 = require("../constants");
 const protocol_converter_1 = __importDefault(require("./protocol-converter"));
 const helpers_1 = require("../protocol/helpers");

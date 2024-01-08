@@ -7,6 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.routeToCommandName = exports.NO_SESSION_ID_COMMANDS = exports.ALL_COMMANDS = exports.METHOD_MAP = void 0;
 const lodash_1 = __importDefault(require("lodash"));
 const armor_support_1 = require("armor-support");
+// eslint-disable-next-line
 const constants_1 = require("../constants");
 const SET_ALERT_TEXT_PAYLOAD_PARAMS = {
     validate: (jsonObj) => !armor_support_1.util.hasValue(jsonObj.value) &&

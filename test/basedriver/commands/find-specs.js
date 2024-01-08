@@ -3,6 +3,7 @@ import path from 'path';
 import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import { BaseDriver, ImageElement } from '../../..';
+// eslint-disable-next-line
 import { IMAGE_STRATEGY, CUSTOM_STRATEGY, helpers } from '../../../lib/basedriver/commands/find';
 import { imageUtil } from 'armor-support';
 

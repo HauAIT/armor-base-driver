@@ -18,6 +18,7 @@ const static_1 = require("./static");
 const crash_1 = require("./crash");
 const websocket_1 = require("./websocket");
 const bluebird_1 = __importDefault(require("bluebird"));
+// eslint-disable-next-line
 const constants_1 = require("../constants");
 const events_1 = require("events");
 const armor_support_1 = require("armor-support");
@@ -45,7 +46,7 @@ async function createServer(app, cliArgs) {
     }
     const [cert, key] = await bluebird_1.default.all(certKey.map((p) => armor_support_1.fs.readFile(p, 'utf8')));
     logger_1.default.debug('Enabling TLS/SPDY on the server using the provided certificate');
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    // eslint-disable-next-line
     return require('spdy').createServer({
         cert,
         key,

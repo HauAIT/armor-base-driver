@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import logCommands from '../../../lib/basedriver/commands/log';
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
