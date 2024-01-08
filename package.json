@@ -22,9 +22,9 @@
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "@dabh/colors": "^1.4.0",
-    "ait-async": "git+https://ait-software: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@github.com/ait-software/ait-async.git",
-    "armor-support": "git+https://ait-software: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@github.com/ait-software/armor-support.git",
-    "armor-types": "git+https://ait-software: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@github.com/ait-software/armor-types.git",
+    "ait-async": "^1.0.2",
+    "armor-support": "^1.0.2",
+    "armor-types": "^1.0.0",
     "async-lock": "^1.0.0",
     "axios": "^0.x",
     "bluebird": "^3.5.3",
@@ -61,11 +61,11 @@
     "precommit-test"
   ],
   "devDependencies": {
-    "armor-gulp-plugins": "git+https://ait-software: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@github.com/ait-software/armor-gulp-plugins.git",
+    "armor-gulp-plugins": "^1.0.2",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "content-disposition": "^0.5.0",
-    "eslint-config-armor": "git+https://ait-software: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@github.com/ait-software/eslint-config-armor.git",
+    "eslint-config-armor": "^4.7.0",
     "finalhandler": "^1.1.1",
     "gulp": "^4.0.0",
     "mocha": "^9.0.0",
