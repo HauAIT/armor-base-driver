@@ -1,7 +1,7 @@
 {
   "name": "armor-base-driver",
   "description": "Base driver class for Armor drivers",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "ait-software",
   "main": "./build/index.js",
   "bin": {},
@@ -40,7 +40,6 @@
     "source-map-support": "^0.x",
     "spdy": "^4.0.2",
     "validate.js": "^0.13.0",
-    "webdriverio": "^6.0.2",
     "ws": "^8.0.0"
   },
   "scripts": {
