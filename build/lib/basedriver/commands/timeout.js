@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const asyncbox_1 = require("asyncbox");
+const ait_async_1 = require("ait-async");
 const lodash_1 = __importDefault(require("lodash"));
 const armor_support_1 = require("armor-support");
 const protocol_1 = require("../../protocol");
@@ -112,7 +112,7 @@ const TimeoutCommands = {
             await this.clearNewCommandTimeout();
             return await condFn(...args);
         };
-        return await (0, asyncbox_1.waitForCondition)(wrappedCondFn, {
+        return await (0, ait_async_1.waitForCondition)(wrappedCondFn, {
             waitMs: this.implicitWaitMs,
             intervalMs: 500,
             logger: this.log,

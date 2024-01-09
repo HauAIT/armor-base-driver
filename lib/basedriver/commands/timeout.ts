@@ -1,4 +1,4 @@
-import {waitForCondition} from 'asyncbox';
+import {waitForCondition} from 'ait-async';
 import _ from 'lodash';
 import {util} from 'armor-support';
 import {errors} from '../../protocol';
