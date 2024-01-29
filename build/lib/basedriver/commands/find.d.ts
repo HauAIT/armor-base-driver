@@ -1,6 +1,2 @@
-import { Constraints, IFindCommands } from 'armor-types';
-declare module '../driver' {
-    interface BaseDriver<C extends Constraints> extends IFindCommands {
-    }
-}
+export {};
 //# sourceMappingURL=find.d.ts.map

@@ -15,7 +15,7 @@ import {
   type W3CDriverCaps,
   type InitialOpts,
   type DefaultDeleteSessionResult,
-  type SingularSessionData,
+  type SingularSessionData, IExecuteCommands, IEventCommands, IFindCommands, ILogCommands, ITimeoutCommands,
 } from 'armor-types';
 import B from 'bluebird';
 import _ from 'lodash';
@@ -400,3 +400,8 @@ export class BaseDriver<
 export * from './commands';
 
 export default BaseDriver;
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export interface BaseDriver<C extends Constraints> extends IExecuteCommands, IEventCommands, IFindCommands, ILogCommands, ITimeoutCommands {}
+
+
