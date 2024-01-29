@@ -1,4 +1,4 @@
-import { type ArmorServer, type BaseDriverCapConstraints, type Capabilities, type Constraints, type DefaultCreateSessionResult, type Driver, type DriverCaps, type DriverData, type MultiSessionData, type ServerArgs, type StringRecord, type W3CDriverCaps, type InitialOpts, type DefaultDeleteSessionResult, type SingularSessionData } from 'armor-types';
+import { type ArmorServer, type BaseDriverCapConstraints, type Capabilities, type Constraints, type DefaultCreateSessionResult, type Driver, type DriverCaps, type DriverData, type MultiSessionData, type ServerArgs, type StringRecord, type W3CDriverCaps, type InitialOpts, type DefaultDeleteSessionResult, type SingularSessionData, IExecuteCommands, IEventCommands, IFindCommands, ILogCommands, ITimeoutCommands } from 'armor-types';
 import { DriverCore } from './core';
 export declare class BaseDriver<const C extends Constraints, CArgs extends StringRecord = StringRecord, Settings extends StringRecord = StringRecord, CreateResult = DefaultCreateSessionResult<C>, DeleteResult = DefaultDeleteSessionResult, SessionData extends StringRecord = StringRecord> extends DriverCore<C, Settings> implements Driver<C, CArgs, Settings, CreateResult, DeleteResult, SessionData> {
     cliArgs: CArgs & ServerArgs;
@@ -49,4 +49,6 @@ export declare class BaseDriver<const C extends Constraints, CArgs extends Strin
 }
 export * from './commands';
 export default BaseDriver;
+export interface BaseDriver<C extends Constraints> extends IExecuteCommands, IEventCommands, IFindCommands, ILogCommands, ITimeoutCommands {
+}
 //# sourceMappingURL=driver.d.ts.map

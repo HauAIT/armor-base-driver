@@ -1,6 +1,2 @@
-import { Constraints, IExecuteCommands } from 'armor-types';
-declare module '../driver' {
-    interface BaseDriver<C extends Constraints> extends IExecuteCommands {
-    }
-}
+export {};
 //# sourceMappingURL=execute.d.ts.map

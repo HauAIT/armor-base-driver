@@ -4,11 +4,6 @@ import {errors} from '../../protocol';
 import {BaseDriver} from '../driver';
 import {mixin} from './mixin';
 
-declare module '../driver' {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  interface BaseDriver<C extends Constraints> extends IFindCommands {}
-}
-
 async function findElOrEls<C extends Constraints>(
   this: BaseDriver<C>,
   strategy: string,

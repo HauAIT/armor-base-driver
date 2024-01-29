@@ -3,10 +3,6 @@ import _ from 'lodash';
 import {BaseDriver} from '../driver';
 import {mixin} from './mixin';
 
-declare module '../driver' {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  interface BaseDriver<C extends Constraints> extends IEventCommands {}
-}
 
 const EventCommands: IEventCommands = {
   /**
