@@ -32,7 +32,7 @@ const EVENT_SESSION_QUIT_DONE = 'quitSessionFinished';
 const ON_UNEXPECTED_SHUTDOWN_EVENT = 'onUnexpectedShutdown';
 
 export class BaseDriver<
-    const C extends Constraints,
+    C extends Constraints,
     CArgs extends StringRecord = StringRecord,
     Settings extends StringRecord = StringRecord,
     CreateResult = DefaultCreateSessionResult<C>,
@@ -401,7 +401,6 @@ export * from './commands';
 
 export default BaseDriver;
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export interface BaseDriver<C extends Constraints> extends IExecuteCommands, IEventCommands, IFindCommands, ILogCommands, ITimeoutCommands {}
 
 

@@ -28,7 +28,7 @@ const NEW_COMMAND_TIMEOUT_MS = 60 * 1000;
 
 const ON_UNEXPECTED_SHUTDOWN_EVENT = 'onUnexpectedShutdown';
 
-export class DriverCore<const C extends Constraints, Settings extends StringRecord = StringRecord>
+export class DriverCore<C extends Constraints, Settings extends StringRecord = StringRecord>
   implements Core<C, Settings>
 {
   /**

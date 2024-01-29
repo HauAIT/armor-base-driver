@@ -4,7 +4,7 @@ import type { ArmorLogger, Constraints, Core, Driver, DriverOpts, EventHistory, 
 import AsyncLock from 'async-lock';
 import DeviceSettings from './device-settings';
 import helpers from './helpers';
-export declare class DriverCore<const C extends Constraints, Settings extends StringRecord = StringRecord> implements Core<C, Settings> {
+export declare class DriverCore<C extends Constraints, Settings extends StringRecord = StringRecord> implements Core<C, Settings> {
     /**
      * Make the basedriver version available so for any driver which inherits from this package, we
      * know which version of basedriver it inherited from
