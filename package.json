@@ -1,9 +1,9 @@
 {
   "name": "armor-base-driver",
   "description": "Base driver class for Armor drivers",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "ait-software",
-  "main": "./build/index.js",
+  "main": "./build/lib/index.js",
   "bin": {},
   "directories": {
     "lib": "lib"
